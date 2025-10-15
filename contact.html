@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Luka Gilliam</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Luka Gilliam</a>
+      <button id="nav-toggle-6" aria-label="Toggle navigation">☰</button>
+      <nav id="site-nav-6" class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="projects.html">Projects</a>
+        <a href="organizations.html">Organizations</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <h1>Contact</h1>
+    <p>Prefer email — example placeholder below. Replace with your real contact address when ready.</p>
+
+    <div class="contact-grid">
+      <form id="contact-form" class="contact-form" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required placeholder="Your name" />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required placeholder="lukagilliam@email.com" />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required placeholder="Say hi or ask for my resume..."></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+        <p id="form-msg" class="form-msg" aria-live="polite"></p>
+      </form>
+
+      <aside class="contact-info">
+        <h3>Get in touch</h3>
+        <p><strong>Email:</strong> <a href="mailto:lukagilliam@email.com">lukagilliam@email.com</a></p>
+        <p><strong>Location:</strong> Virginia, USA (VSU)</p>
+        <p><strong>Availability:</strong> Weekdays (class & practice schedule varies)</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year-contact"></span> Luka Gilliam</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

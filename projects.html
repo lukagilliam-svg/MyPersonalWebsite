@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — Luka Gilliam</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Luka Gilliam</a>
+      <button id="nav-toggle-4" aria-label="Toggle navigation">☰</button>
+      <nav id="site-nav-4" class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="projects.html">Projects</a>
+        <a href="organizations.html">Organizations</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container projects-page">
+    <h1>Projects</h1>
+    <p>Below are projects I’ve built or am currently developing. These showcase practical and beginner-friendly work as I learn full-stack and Python development.</p>
+
+    <section class="project-list">
+      <article class="project">
+        <h2>Bank Account Tracker (Python)</h2>
+        <p>A small Python application that simulates tracking a checking account across 7 days. It records daily transactions (deposits/withdrawals) and prints a running balance. Useful for practicing file I/O and simple logic.</p>
+        <pre class="code-snippet">
+# Example snippet (Python):
+transactions = [("Mon", -24.50), ("Tue", 150.00), ("Wed", -12.30)]
+balance = 500.00
+for day, amt in transactions:
+    balance += amt
+    print(day, "->", balance)
+        </pre>
+        <p class="small">Status: Prototype</p>
+        <a class="btn" href="contact.html">Ask for code</a>
+      </article>
+
+      <article class="project">
+        <h2>Learning Web Dev Playground</h2>
+        <p>Hands-on exercises building static pages, styling with CSS, and adding small JavaScript utilities. This site itself is part of that learning process.</p>
+        <a class="btn ghost" href="about.html">My learning path</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year-projects"></span> Luka Gilliam</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

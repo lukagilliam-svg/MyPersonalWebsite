@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Luka Gilliam — Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HEADER / NAVIGATION -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Luka Gilliam</a>
+      <button id="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav id="site-nav" class="site-nav">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#organizations-section" id="org-btn">Organizations</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero colorful-blob" id="home">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hi — I’m Luka Gilliam</h1>
+          <p class="subtitle">Computer Science Major at Virginia State University • Sophomore • VSU Baseball</p>
+          <p>Hello! I'm a computer science major learning to build useful programs. I have experience writing small Python projects and I'm interested in software development and cybersecurity.</p>
+          <div class="hero-cta">
+            <a class="btn" href="#projects">See my projects</a>
+            <a class="btn ghost" href="#resume">View my resume</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="card-profile">
+            <div class="avatar">LG</div>
+            <div class="card-info">
+              <h3>Luka Gilliam</h3>
+              <p>Computer Science • VSU</p>
+              <p class="small">Sophomore • Athlete (Baseball)</p>
+            </div>
+          </div>
+          <ul class="quick-stats">
+            <li><strong>Projects:</strong><span> 1</span></li>
+            <li><strong>Clubs:</strong><span> 3</span></li>
+            <li><strong>Skills:</strong><span> Python, Communication</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS / PROJECTS -->
+    <section class="highlights container" id="projects">
+      <h2>What I’m working on</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Bank Account Tracker</h3>
+          <p>A Python program that simulates tracking a bank account over a week — deposits, withdrawals, and balances.</p>
+          <a href="#projects" class="link">Details →</a>
+        </article>
+        <article class="card">
+          <h3>Learning Web Dev</h3>
+          <p>Building responsive websites, working with HTML/CSS/JavaScript, and using AI-generated code to speed development.</p>
+          <a href="#about" class="link">Read more →</a>
+        </article>
+        <article class="card">
+          <h3>Getting into Cybersecurity</h3>
+          <p>Active in Cybersecurity Club—practicing fundamentals and learning tools like Wireshark and Nmap.</p>
+          <a href="#organizations-section" class="link">Clubs →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ORGANIZATIONS SECTION (HIDDEN UNTIL CLICKED) -->
+    <section id="organizations-section" class="container highlights" style="display:none;">
+      <h2>My Organizations</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>🏏 VSU Baseball Team</h3>
+          <p>Active athlete representing Virginia State University with dedication and teamwork.</p>
+        </div>
+        <div class="card">
+          <h3>💻 Coding Club</h3>
+          <p>Member contributing to collaborative programming projects and peer learning.</p>
+        </div>
+        <div class="card">
+          <h3>🛡️ Cybersecurity Club</h3>
+          <p>Engaged in learning ethical hacking, defense strategies, and digital safety practices.</p>
+        </div>
+        <div class="card">
+          <h3>⚙️ National Society of Black Engineers</h3>
+          <p>Member focused on leadership, community, and advancing Black excellence in STEM.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT CTA -->
+    <section class="container contact-cta" id="contact">
+      <div class="cta-inner">
+        <h2>Want to connect?</h2>
+        <p>Send me a message or check out my resume.</p>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Luka Gilliam — Built with ❤️ and code.</p>
+      <nav class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+  <script>
+    // ORGANIZATIONS TOGGLE
+    const orgBtn = document.getElementById("org-btn");
+    const orgSection = document.getElementById("organizations-section");
+
+    orgBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (orgSection.style.display === "none" || orgSection.style.display === "") {
+        orgSection.style.display = "block";
+        orgSection.scrollIntoView({ behavior: "smooth" });
+      } else {
+        orgSection.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>
